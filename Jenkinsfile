@@ -16,7 +16,7 @@ pipeline {
                 sh '/usr/local/bin/aws s3 cp /home/ubuntu/simples3bucket.json s3://tejammed/simples3bucket.json'
             }
         }
-        stage('Deploy') { 
+        stage('Deployment') { 
             steps {
                 sh 'cd /usr/local/bin/'
                 sh 'ls'

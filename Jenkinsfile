@@ -20,7 +20,7 @@ pipeline {
             steps {
                 sh 'cd /usr/local/bin/'
                 sh 'ls'
-                sh "/usr/local/bin/aws cloudformation create-stack --stack-name s3bucket --template-body file://simples3bucket.json --region 'eu-west-3'"
+                sh "/usr/local/bin/aws cloudformation create-stack --stack-name s3bucket --template-body file:///home/ubuntu/simples3bucket.json --region 'eu-west-3'"
             }
         }
     }

@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone') { 
             steps {
-                sh 'git clone https://github.com/prudhvivysyaraju/multibranchtest.git'
+                sh 'git clone https://github.com/sambuTeja/Multipartupload.git'
             }
         }
         stage('Test') { 
